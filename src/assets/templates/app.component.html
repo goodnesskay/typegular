@@ -7,11 +7,10 @@
 </div>
 
 <div>
-  <h1>{{ hero.name }}</h1>
-  <h1>{{ dayo.name }}</h1>
+  <h1 *ngFor="let hero of heroes"><small>{{hero.id}}</small>{{ hero.name }}</h1>
 </div>
 
-<div>
-  <label>name: </label>
-  <input [(ngModel)]="hero.name" placeholder="name">
-</div>
+<!--<div>-->
+  <!--<label>name: </label>-->
+  <!--<input [(ngModel)]="heroes.name" placeholder="name">-->
+<!--</div>-->
